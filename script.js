@@ -88,6 +88,7 @@ function convertImageToPDF(file) {
 }
 
 function handlePDF(file) {
+
   const downloadLink = document.getElementById('downloadLink');
   downloadLink.style.display = 'inline-block';
   downloadLink.href = URL.createObjectURL(file);
@@ -102,3 +103,9 @@ function showDownloadLink(pdf) {
   downloadLink.download = 'converted.pdf';
   downloadLink.textContent = 'Download PDF';
 }
+document.getElementById('downloadAppBtn').addEventListener('click', () => {
+  const downloadLink = document.createElement('a');
+  downloadLink.href = 'PDF CONVERTER.apk'; // Replace with your actual APK file URL
+  downloadLink.download = 'PDF CONVERTER.apk'; // Name of the downloaded file
+  downloadLink.click(); // Trigger the download
+});

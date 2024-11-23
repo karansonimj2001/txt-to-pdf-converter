@@ -104,6 +104,35 @@ input[type="file"]:hover {
     font-weight: bolder;
     color: white;
 }
+.info {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#downloadAppBtn {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green color for the button */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#downloadAppBtn:hover {
+    background-color: #218838; /* Darker green when hovered */
+}
+
 @media (max-width: 768px) {
     #main2 li {
         font-size: 5vw;
